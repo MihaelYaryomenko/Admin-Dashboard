@@ -60,45 +60,53 @@
       <div id="right-container">
         <div id="header">
           <div id="upper-header">
-            <img class="header-icon" src="/src/magnify.svg" alt="">
-            <div id="grey-thing"></div>
-            <img class="header-icon" src="/src/bell.svg" alt="">
-            <img class="avatar" src="/src/David_Goggins_cropped.png" alt="">
-            <p>Morgan Oakley</p>
+            <div class="upper-header-container">
+              <img class="header-icon" src="/src/magnify.svg" alt="">
+              <div id="grey-thing"></div>
+            </div>
+            <div id="right-upper-header-container" class="upper-header-container">
+              <img class="header-icon" src="/src/bell.svg" alt="">
+              <img id="avatar" src="/src/David_Goggins_cropped.png" alt="">
+              <h3 id="normal-header">David Goggins</h3>
+            </div>
           </div>
           <div id="lower-header">
-            <img class="avatar" src="/src/David_Goggins_cropped.png" alt="">
-            <div class="column-container">
-              <p>Hi there,</p>
-              <h3>Morgan Oakley (@morgan)</h3>
+            <div id="avatar-text-container" class="row-container">
+              <img class="avatar" src="/src/David_Goggins_cropped.png" alt="">
+              <div class="column-container">
+                <p class="small-text">Hi there,</p>
+                <h3>David Goggins (@goggins)</h3>
+              </div>
             </div>
-            <button class="blue-button">New</button>
-            <button class="blue-button">Upload</button>
-            <button class="blue-button">Share</button>
+            <div id="btn-container">
+              <button class="blue-button">New</button>
+              <button class="blue-button">Upload</button>
+              <button class="blue-button">Share</button>
+            </div>
           </div>
         </div>
         <div id="main-container">
           <div id="left-main-container">
-            <h3>Your Projects</h3>
+            <h3 class="header">Your Projects</h3>
             <div id="project-container">
-              <div class="project"></div>
-              <div class="project"></div>
-              <div class="project"></div>
-              <div class="project"></div>
-              <div class="project"></div>
-              <div class="project"></div>
+              <div class="project shadow-box"></div>
+              <div class="project shadow-box"></div>
+              <div class="project shadow-box"></div>
+              <div class="project shadow-box"></div>
+              <div class="project shadow-box"></div>
+              <div class="project shadow-box"></div>
             </div>
           </div>
           <div id="right-main-container">
             <div id="secondary-right-container">
-              <h3>Announcements</h3>
-              <div class="grid-right-container">
+              <h3 class="header">Announcements</h3>
+              <div class="grid-right-container shadow-box">
                 <div id="announcements-container">
   
                 </div>
               </div>
-              <h3>Trending</h3>
-              <div class="grid-right-container">
+              <h3 class="header">Trending</h3>
+              <div class="grid-right-container shadow-box">
                 <div id="trending-container">
   
                 </div>

@@ -38,9 +38,14 @@ body {
 
 #upper-header {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   height: 43%;
   width: 100%;
+}
+
+.upper-header-container {
+  display: flex;
+  align-items: center;
 }
 
 #upper-header > * {
@@ -48,13 +53,33 @@ body {
 }
 
 #grey-thing {
-  height: 10px;
+  margin: 0px 0px 0px 10px;
+  height: 18px;
   width: 400px;
   background-color: var(--border-secondary);
-  border-radius: 5px;
+  border-radius: 10px;
+}
+
+#avatar {
+  width: 32px;
+}
+
+#normal-header {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#right-upper-header-container > * {
+  margin: 0px 10px 0px 10px;
+}
+
+#right-upper-header-container {
+  position: relative;
+  right: 15px;
 }
 
 #lower-header {
+  justify-content: space-between;
   display: flex;
   align-items: center;
   height: 67%;
@@ -173,11 +198,13 @@ body {
 }
 
 .avatar {
-  height: 64px;
-  width: 64px;
+  height: 55px;
+  width: 55px;
 }
 
 .column-container {
+  justify-content: center;
+  margin: 0px 0px 0px 15px;
   display: flex;
   flex-direction: column;
 }
@@ -185,17 +212,25 @@ body {
 .blue-button {
   border: none;
   color: white;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   border-radius: 20px;
-  margin: 20px;
-  background-color: var(--button-color);
-  height: 35px;
-  width: 100px;
+  margin: 0px 5px 0px 5px;
+  background-color: var(--main-color);
+  height: 30px;
+  width: 70px;
+}
+
+.blue-button:hover {
+  opacity: 0.8;
+}
+
+.blue-button:active {
+  opacity: 0.6;
 }
 
 .header-icon {
-  width: 50px;
+  width: 20px;
 }
 
 .project {
@@ -205,10 +240,10 @@ body {
 }
 
 #project-container {
-  margin: 15px 15px 30px 15px;
+  margin: 10px 15px 30px 15px;
   align-items: center;
   justify-items: center;
-  gap: 15px;
+  gap: 20px;
   width: 1fr;
   height: 92%;
   display: grid;
@@ -216,15 +251,21 @@ body {
   grid-template-rows: repeat(3, 1fr);
 }
 
-h3 {
+.header {
+  font-weight: 600;
+  font-size: 14px;
   margin: 15px 15px 0px 15px;
 }
 
 .grid-right-container {
-  margin: 15px;
+  margin: 10px 15px 15px 15px;
   background-color: white;
   width: 1fr;
   height: 50%;
+}
+
+#upper-header > .upper-header-container:first-child {
+  margin-left: 25px;
 }
 
 #secondary-right-container {
@@ -233,4 +274,28 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+}
+
+.shadow-box {
+  box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+.row-container {
+  display: flex;
+}
+
+#avatar-text-container {
+  margin: 0px 0px 0px 25px;
+}
+
+.small-text {
+  font-weight: 600;
+  font-size: 10px;
+}
+
+#btn-container {
+  position: relative;
+  right: 25px;
+  display: flex;
 }
