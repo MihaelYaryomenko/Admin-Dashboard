@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background-color: var(--border-secondary);
+  background-color: black;
   display: flex;
   justify-content: center;
 }
@@ -85,7 +85,6 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  background-color: orange;
 }
 
 .sidebar-item {
@@ -149,12 +148,12 @@ body {
 
 #left-main-container {
   width: 70%;
-  background-color: lawngreen;
+  background-color: var(--border-secondary);
 }
 
 #right-main-container {
   width: 30%;
-  background-color: darkcyan;
+  background-color: var(--border-secondary);
 }
 
 .nav-icons {
@@ -200,11 +199,34 @@ body {
 }
 
 .project {
-  width: 100px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
   background-color: white;
 }
 
 #project-container {
+  margin: 15px 15px 30px 15px;
+  align-items: center;
+  justify-items: center;
+  gap: 15px;
+  width: 1fr;
+  height: 92%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
 
+h3 {
+  margin: 15px 15px 0px 15px;
+}
+
+.right-main-container {
+  display: flex;
+}
+
+.grid-right-container {
+  margin: 15px;
+  background-color: white;
+  width: 1fr;
+  height: 50%;
 }
